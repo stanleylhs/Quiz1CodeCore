@@ -3,15 +3,14 @@ require './q07_helper_methods.rb'
 module Blog
   class Article
     attr_accessor :title, :body
-    include HelperMethods
+    extend HelperMethods
     def initialize(title, body)
-      @title = titleize(title)
+      @title = Article.titleize(title)
       @body = body
     end
   end
   class Snippet < Article
     attr_accessor :title, :body
-    include HelperMethods
     def initialize(title, body)
       super
       if (body.length > 100)
