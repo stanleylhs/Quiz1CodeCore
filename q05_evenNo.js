@@ -1,14 +1,11 @@
 var evenNo = function(n){
 	var result = [];
-	i = n;
-	while (i > 0){
-		var num = n - i + 1;
-		if (num % 2 == 0) {
-			result.push(num);
-		}
-		i--;
+	var num = 2
+	while (result.length < n){
+		result.push(num);
+		num += 2;
 	}
 	return result;
 };
 
-console.log(evenNo(10));
+console.log(evenNo(5));
