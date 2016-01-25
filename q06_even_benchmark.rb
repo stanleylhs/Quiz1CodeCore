@@ -37,3 +37,5 @@ Benchmark.bm do |x|
     100_000.times {even_recursion(5)}
   end
 end
+
+p "Loop is faster!"
