@@ -36,4 +36,6 @@
   end
 
 string = "man of the wild"
-p titleize("man of the wild")
+p string
+p titleize(string)
+p string + ' string not mutated!'
